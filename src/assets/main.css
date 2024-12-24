@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .hs-carousel-slide {
+    overflow: visible;
+  }
+
+  /* For Chrome, Safari, Edge, and Opera */
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* For Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 4px; /* Width of the scrollbar */
+    height: 4px; /* Height of the scrollbar */
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent; /* Transparent scrollbar track */
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: transparent; /* Transparent scrollbar thumb */
+    border-radius: 4px; /* Rounded corners for the scrollbar */
+  }
+
+  /* Add support for Firefox */
+  .scrollbar-thin {
+    scrollbar-width: thin; /* Thin scrollbar in Firefox */
+    scrollbar-color: transparent transparent; /* Transparent scrollbar thumb and track */
+  }
+}
